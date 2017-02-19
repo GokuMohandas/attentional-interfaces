@@ -1,5 +1,4 @@
 # O'Reilly
-My O'Reilly Publications
 
 ### Publications:
 1. [Introduction to Attentional Interfaces]()
