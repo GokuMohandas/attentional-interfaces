@@ -1,2 +1,2 @@
-# O-Reilly
-My O-Reilly Publications
+# O'Reilly
+My O'Reilly Publications
