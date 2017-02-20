@@ -1,7 +1,8 @@
 # O'Reilly
 
 ### Publications:
-1. [Introduction to Attentional Interfaces]()
+1. [Introduction to Attentional Interfaces](https://github.com/ajarai/O-Reilly/tree/master/attention)
+	* []'Reilly publication]()
 
 ### Contact:
 Goku Mohandas
