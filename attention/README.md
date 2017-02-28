@@ -1,7 +1,7 @@
 ##Interpretability with Attentional Interfaces
 A closer look at the reasoning inside your deep networks.
 
-TLDR: This post will serve as a gentle introduction to attentional interfaces in deep neural architectures using Tensorflow. Incorporation of attention mechanisms is very simple and can offer transparency/interpretability to our complex models. We will also be using preprocessed data, but for optimal inference performance, it is suggested that you retrain the model from scratch using all 25,000 training/test samples. But the main focus of this post will be on attention mechanisms and how you can add them to your networks for increased interpretability.
+TLDR: This post will serve as a gentle introduction to attentional and memory-based interfaces in deep neural architectures using Tensorflow. Incorporation of attention mechanisms is very simple and can offer transparency/interpretability to our complex models. We will conclude with extensions and caveats of the interfaces. 
 
 ### Set Up:
 #### Setting up environment:
@@ -16,7 +16,7 @@ Optional: CUDA enabled GPU (explicity define cpu components (embedding, etc.)
 
 ```bash
 virtualenv -p python3 oreilly-attention-venv
-source oreilly-venv/bin/activate
+source oreilly-attention-venv/bin/activate
 pip install -r requirements.txt
 python setup.py <install | develop>
 ```
