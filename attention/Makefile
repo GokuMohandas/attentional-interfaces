@@ -1,0 +1,44 @@
+# Clean up
+clean:
+	rm *.pyc; \
+	rm notes/*.pyc; \
+	rm -rf notes/__pycache__
+
+# Instructions
+help:
+	echo "make venv"; \
+	echo "source oreilly-attention-venv/bin/activate"; \
+	echo "make load-data"; \
+	echo "ipython3 notebook attention"; \
+
+# Docker
+docker:
+	# -- not used bc ipynb
+
+# Virtual environment
+venv:
+
+	# Initialize venv and activate it
+	virtualenv -p python3 oreilly-attention-venv; \
+
+	# Load PyPI packages
+	source oreilly-attention-venv/bin/activate; \
+	pip install -r requirements.txt;
+
+	# Load TensorFlow
+	source oreilly-attention-venv/bin/activate; \
+	sudo pip3 install --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.12.1-py3-none-any.whl;
+
+	# Load our attention package
+	source oreilly-attention-venv/bin/activate; \
+	python setup.py develop;
+
+# Load data
+load-data:
+
+	# Load data and GloVe embeddings
+	bash fetch_data.sh
+
+# Python files
+execute:
+	# -- not used bc ipynb
