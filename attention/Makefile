@@ -25,9 +25,9 @@ venv:
 	source oreilly-attention-venv/bin/activate; \
 	pip install -r requirements.txt;
 
-	# Load TensorFlow
+	# Load TensorFlow v1.0
 	source oreilly-attention-venv/bin/activate; \
-	sudo pip3 install --upgrade https://storage.googleapis.com/tensorflow/mac/cpu/tensorflow-0.12.1-py3-none-any.whl;
+	sudo pip3 install --upgrade tensorflow;
 
 	# Load our attention package
 	source oreilly-attention-venv/bin/activate; \
