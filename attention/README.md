@@ -1,17 +1,25 @@
 ##Interpretability via Attentional and Memory-based Interfaces Using TensorFlow
 A closer look at the reasoning inside your deep networks.
 
-TLDR: This post will serve as a gentle introduction to attentional and memory-based interfaces in deep neural architectures using Tensorflow. Incorporation of attention mechanisms is very simple and can offer transparency/interpretability to our complex models. We will conclude with extensions and caveats of the interfaces. 
+TLDR: This post will serve as a gentle introduction to attentional and memory-based interfaces in deep neural architectures using Tensorflow. Incorporation of attention mechanisms is very simple and can offer transparency/interpretability to our complex models. We will conclude with extensions and caveats of the interfaces.
 
 ### Set Up:
-Note: Not using Docker, because at the time of this post, there were a few issues with displaying certain ipynb components on containers.
-#### Setting up environment:
+Note: You can also set up with the Dockerfile in the repo. For GPU versions, etc. check out tensorflow docker repo @ https://github.com/tensorflow/tensorflow/tree/master/tensorflow/tools/docker
+
+#### Setting up environment using Docker containers:
+```bash
+docker build -t USERNAME/CONTAINER_NAME:cpu -f Dockerfile.cpu .
+docker run -it -p 8888:8888 -p 6006:6006 REPOSITORY:TAG bash
+ipython3 notebook
+```
+
+#### Setting up environment on local machine:
 
 ```bash
 Required:
-python 3.3+
-pip 9.0.1 (sudo easy_install pip)
-virtualenv (pip install virtualenv)
+    python 3.3+
+    pip 9.0.1 (sudo easy_install pip)
+    virtualenv (pip install virtualenv)
 Optional: CUDA enabled GPU (explicity define cpu components (embedding, etc.)
 ```
 
@@ -25,7 +33,6 @@ make venv
 source oreilly-attention-venv/bin/activate
 make load-data
 ipython3 notebook attention
-```
 ```
 
 #### Start ipython notebook:
