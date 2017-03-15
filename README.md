@@ -1,7 +1,7 @@
 # O'Reilly
 
 ### Publications:
-1. [Introduction to Attentional Interfaces]()
+1. [Introduction to Attentional Interfaces](.)
 
 ### Contact:
 Goku Mohandas
