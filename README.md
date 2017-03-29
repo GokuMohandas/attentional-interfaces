@@ -6,7 +6,7 @@ A closer look at the reasoning inside your deep networks.
 **Note:** This code has been written for TensorFlow v1.0.0
 
 Before running the Jupyter notebook [attention.ipynb](attention.ipynb), you'll need to ensure that your machine is set up to run TensorFlow and install a handful of helpful additional libraries.
-![image1](images/cover.jpg)
+![image1](images/cover_image.jpg)
 ### Setup
 1. Download [this entire repo from GitHub](https://github.com/ajarai/O-Reilly)
 
