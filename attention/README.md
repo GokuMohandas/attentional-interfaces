@@ -1,22 +1,56 @@
 ##Interpretability via Attentional and Memory-based Interfaces Using TensorFlow
 A closer look at the reasoning inside your deep networks.
 
-<b>TLDR</b>: This post will serve as a gentle introduction to attentional and memory-based interfaces in deep neural architectures using Tensorflow. Incorporation of attention mechanisms is very simple and can offer transparency/interpretability to our complex models. We will conclude with extensions and caveats of the interfaces.
+**TLDR:** This post will serve as a gentle introduction to attentional and memory-based interfaces in deep neural architectures using TensorFlow. Incorporation of attention mechanisms is very simple and can improve transparency interpretability in our complex models. We will conclude with extensions and caveats of the interfaces.
 
-<b>Update</b>: Please use TensorFlow V-1.0.0, future versions may cause things to break.
+**Note:** This code has been written for TensorFlow v1.0.0
 
-### Set Up:
-Note: You can also set up with the Dockerfile in the repo. For GPU versions, etc. check out tensorflow docker repo @ https://github.com/tensorflow/tensorflow/tree/master/tensorflow/tools/docker
+Before running the Jupyter notebook [attention.ipynb](attention.ipynb), you'll need to ensure that your machine is set up to run TensorFlow and install a handful of helpful additional libraries.
 
-#### Setting up environment using Docker containers:
+### Setup
+1. Download [this entire repo from GitHub](https://github.com/ajarai/O-Reilly)
+
+2. Open your terminal and use `cd` to navigate into the top directory of the repo on your machine
+
+3. Unzip the processed reviews data by entering
 ```bash
-docker build -t USERNAME/CONTAINER_NAME:cpu -f Dockerfile.cpu .
-docker run -it -p 8888:8888 -p 6006:6006 REPOSITORY:TAG bash
-ipython3 notebook
+unzip ./attention/processed_reviews.zip
 ```
 
-#### Setting up environment on local machine:
+Now, set up your environment by using the Dockerfile included with this repo (option A) or configuring it manually (option B).
 
+#### Option A: use the Dockerfile configured for this notebook
+(Note: For GPU versions, etc. check out [TensorFlow's Docker repo](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/tools/docker).)
+
+5. After downloading this repo to your machine, open your terminal and use `cd` to navigate to the directory that contains `Dockerfile.cpu`.
+
+6. To build the Dockerfile, enter
+```bash
+docker build -t dockerfile_cpu -f dockerfile.cpu .
+```
+If you get a permissions error on running this command, you may need to run it with `sudo`:
+```bash
+sudo  build -t dockerfile_cpu -f dockerfile.cpu .
+```
+
+7. Run Docker from the Dockerfile you've just built
+```bash
+docker run -it -p 8888:8888 -p 6006:6006 dockerfile_cpu bash
+```
+or
+```bash
+sudo docker run -it -p 8888:8888 -p 6006:6006 dockerfile_cpu bash
+```
+if you run into permission problems.
+
+8. Launch Jupyter by entering
+```bash
+jupyter notebook
+```
+and, using your browser, navigate to the URL shown in the terminal output (usually http://localhost:8888/)
+
+#### Option B: set up environment manually on local machine
+For instructions on installing TensorFlow, please see [TensorFlow's platform-specific installation instructions](https://www.tensorflow.org/install/).
 ```bash
 Required:
     python 3.3+
@@ -25,19 +59,15 @@ Required:
 Optional: CUDA enabled GPU (explicity define cpu components (embedding, etc.)
 ```
 
-```bash
-cd attention
-make help
-```
-The above should layout the following commands to execute (copy and paste these one by one):
+5. Enter the `attention` directory in your terminal and enter the following commands
 ```bash
 make venv
 source oreilly-attention-venv/bin/activate
 make load-data
 ipython3 notebook attention
 ```
-
-#### Start ipython notebook:
+6. Launch Jupyter by entering
 ```bash
-ipython3 notebook
+jupyter notebook
 ```
+and, using your browser, navigate to the URL shown in the terminal output (usually http://localhost:8888/)
