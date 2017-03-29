@@ -1,9 +1,9 @@
 ## Interpretability via Attentional and Memory-based Interfaces Using TensorFlow
-A closer look at the reasoning inside your deep networks.
+#### A closer look at the reasoning inside your deep networks.
 
 **TLDR:** This post will serve as a gentle introduction to attentional and memory-based interfaces in deep neural architectures using TensorFlow. Incorporation of attention mechanisms is very simple and can improve transparency interpretability in our complex models. We will conclude with extensions and caveats of the interfaces.
 
-![image1](images/cover_image.jpg)
+<img src="images/cover_image.jpg" width="20px" height="20px" />
 
 **Note:** This code has been written for TensorFlow v1.0.0
 
