@@ -3,7 +3,7 @@
 
 **TLDR:** This post will serve as a gentle introduction to attentional and memory-based interfaces in deep neural architectures using TensorFlow. Incorporation of attention mechanisms is very simple and can improve transparency interpretability in our complex models. We will conclude with extensions and caveats of the interfaces.
 
-<img src="images/cover_image.jpg" width="20px" height="20px" />
+<img src="images/cover_image.jpg" width="200px" height="200px" />
 
 **Note:** This code has been written for TensorFlow v1.0.0
 
