@@ -1,4 +1,4 @@
-##Interpretability via Attentional and Memory-based Interfaces Using TensorFlow
+## Interpretability via Attentional and Memory-based Interfaces Using TensorFlow
 A closer look at the reasoning inside your deep networks.
 
 **TLDR:** This post will serve as a gentle introduction to attentional and memory-based interfaces in deep neural architectures using TensorFlow. Incorporation of attention mechanisms is very simple and can improve transparency interpretability in our complex models. We will conclude with extensions and caveats of the interfaces.
@@ -22,9 +22,9 @@ Now, set up your environment by using the Dockerfile included with this repo (op
 #### Option A: use the Dockerfile configured for this notebook
 (Note: For GPU versions, etc. check out [TensorFlow's Docker repo](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/tools/docker).)
 
-5. After downloading this repo to your machine, open your terminal and use `cd` to navigate to the directory that contains `Dockerfile.cpu`.
+4. After downloading this repo to your machine, open your terminal and use `cd` to navigate to the directory that contains `Dockerfile.cpu`.
 
-6. To build the Dockerfile, enter
+5. To build the Dockerfile, enter
 ```bash
 docker build -t dockerfile_cpu -f dockerfile.cpu .
 ```
@@ -33,7 +33,7 @@ If you get a permissions error on running this command, you may need to run it w
 sudo  build -t dockerfile_cpu -f dockerfile.cpu .
 ```
 
-7. Run Docker from the Dockerfile you've just built
+6. Run Docker from the Dockerfile you've just built
 ```bash
 docker run -it -p 8888:8888 -p 6006:6006 dockerfile_cpu bash
 ```
@@ -43,7 +43,7 @@ sudo docker run -it -p 8888:8888 -p 6006:6006 dockerfile_cpu bash
 ```
 if you run into permission problems.
 
-8. Launch Jupyter by entering
+7. Launch Jupyter by entering
 ```bash
 jupyter notebook
 ```
@@ -59,14 +59,14 @@ Required:
 Optional: CUDA enabled GPU (explicity define cpu components (embedding, etc.)
 ```
 
-5. Enter the `attention` directory in your terminal and enter the following commands
+4. Enter the `attention` directory in your terminal and enter the following commands
 ```bash
 make venv
 source oreilly-attention-venv/bin/activate
 make load-data
 ipython3 notebook attention
 ```
-6. Launch Jupyter by entering
+5. Launch Jupyter by entering
 ```bash
 jupyter notebook
 ```
