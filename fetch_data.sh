@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
-DATA_DIR=attention/data
-mkdir $DATA_DIR
+DATA_DIR=data
 
 # Download reviews
 REVIEWS_DIR=$DATA_DIR/reviews
