@@ -9,7 +9,7 @@ help:
 	echo "make venv"; \
 	echo "source oreilly-attention-venv/bin/activate"; \
 	echo "make load-data"; \
-	echo "ipython3 notebook attention"; \
+	echo "ipython3 notebook attention.ipynb”; \
 
 # Docker
 docker:

@@ -16,7 +16,7 @@ Before running the Jupyter notebook [attention.ipynb](attention.ipynb), you'll n
 
 3. Unzip the processed reviews data by entering
 ```bash
-unzip ./attention/processed_reviews.zip
+unzip data/processed_reviews.zip
 ```
 
 Now, set up your environment by using the Dockerfile included with this repo (option A) or configuring it manually (option B).
@@ -66,7 +66,7 @@ Optional: CUDA enabled GPU (explicity define cpu components (embedding, etc.)
 make venv
 source oreilly-attention-venv/bin/activate
 make load-data
-ipython3 notebook attention
+ipython3 notebook attention.ipynb
 ```
 5. Launch Jupyter by entering
 ```bash
