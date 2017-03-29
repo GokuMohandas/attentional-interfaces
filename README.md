@@ -7,6 +7,8 @@ A closer look at the reasoning inside your deep networks.
 
 Before running the Jupyter notebook [attention.ipynb](attention.ipynb), you'll need to ensure that your machine is set up to run TensorFlow and install a handful of helpful additional libraries.
 
+![image1](images/nmt.jpg)
+
 ### Setup
 1. Download [this entire repo from GitHub](https://github.com/ajarai/O-Reilly)
 
