@@ -3,10 +3,12 @@ A closer look at the reasoning inside your deep networks.
 
 **TLDR:** This post will serve as a gentle introduction to attentional and memory-based interfaces in deep neural architectures using TensorFlow. Incorporation of attention mechanisms is very simple and can improve transparency interpretability in our complex models. We will conclude with extensions and caveats of the interfaces.
 
+![image1](images/cover_image.jpg =100x100)
+
 **Note:** This code has been written for TensorFlow v1.0.0
 
 Before running the Jupyter notebook [attention.ipynb](attention.ipynb), you'll need to ensure that your machine is set up to run TensorFlow and install a handful of helpful additional libraries.
-![image1](images/cover_image.jpg)
+
 ### Setup
 1. Download [this entire repo from GitHub](https://github.com/ajarai/O-Reilly)
 
