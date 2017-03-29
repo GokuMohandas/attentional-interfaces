@@ -8,7 +8,6 @@ __pycache__/
 
 # Data
 oreilly-attention-venv/
-data/
 
 # Distribution / packaging
 .Python
