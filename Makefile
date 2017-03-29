@@ -29,10 +29,6 @@ venv:
 	source oreilly-attention-venv/bin/activate; \
 	sudo pip3 install --upgrade tensorflow;
 
-	# Load our attention package
-	source oreilly-attention-venv/bin/activate; \
-	python setup.py develop;
-
 # Load data
 load-data:
 
