@@ -1,7 +1,7 @@
 ## Interpretability via Attentional and Memory-based Interfaces Using TensorFlow
 #### A closer look at the reasoning inside your deep networks.
 
-**TLDR:** This post will serve as a gentle introduction to attentional and memory-based interfaces in deep neural architectures using TensorFlow. Incorporation of attention mechanisms is very simple and can improve transparency interpretability in our complex models. We will conclude with extensions and caveats of the interfaces.
+**TLDR:** This post will serve as a gentle introduction to attentional and memory-based interfaces in deep neural architectures using TensorFlow. Incorporation of attention mechanisms is very simple and can improve transparency interpretability in our complex models. We will conclude with extensions and caveats of the interfaces. The intended audience for this notebook are developers and researchers who have some basic understanding of Tensorflow and fundamental deep learning concepts.
 
 ![image1](images/cover.jpg)
 
@@ -14,9 +14,9 @@ Before running the Jupyter notebook [attention.ipynb](attention.ipynb), you'll n
 
 2. Open your terminal and use `cd` to navigate into the top directory of the repo on your machine
 
-3. Unzip the processed reviews data by entering
+3. Unzip the processed reviews data by entering the following inside the data directory.
 ```bash
-unzip data/processed_reviews.zip
+unzip processed_reviews.zip
 ```
 
 Now, set up your environment by using the Dockerfile included with this repo (option A) or configuring it manually (option B).
