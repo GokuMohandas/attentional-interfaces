@@ -78,7 +78,7 @@ and, using your browser, navigate to the URL shown in the terminal output (usual
 ### Contact:
 Goku Mohandas
 * Twitter: [@GokuMohandas](https://twitter.com/gokumohandas)
-* Github: [ajarai](https://github.com/ajarai)
+* Github: [GokuMohandas](https://github.com/GokuMohandas)
 * Blog: [The Neural Perspective](http://www.theneuralperspective.com)
 * Linkedin: [Goku Mohandas](https://www.linkedin.com/in/gokumd)
 
