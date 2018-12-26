@@ -1,10 +1,8 @@
 ## [Interpretability via Attentional and Memory-based Interfaces Using TensorFlow](https://www.oreilly.com/ideas/interpretability-via-attentional-and-memory-based-interfaces-using-tensorflow)
-#### A closer look at the reasoning inside your deep networks.
+A closer look at the reasoning inside your deep networks.
 
 **TLDR:** This post will serve as a gentle introduction to attentional and memory-based interfaces in deep neural architectures using TensorFlow. Incorporation of attention mechanisms is very simple and can improve transparency interpretability in our complex models. We will conclude with extensions and caveats of the interfaces. The intended audience for this notebook are developers and researchers who have some basic understanding of Tensorflow and fundamental deep learning concepts. Check out this [post](https://www.oreilly.com/learning/hello-tensorflow) for a nice introduction to Tensorflow. 
-
 ![image1](images/github_cover.jpg)
-
 **Note:** This code has been written for TensorFlow v1.0.0
 
 Before running the Jupyter notebook [attention.ipynb](attention.ipynb), you'll need to ensure that your machine is set up to run TensorFlow and install a handful of helpful additional libraries.
@@ -80,7 +78,7 @@ Goku Mohandas
 * Twitter: [@GokuMohandas](https://twitter.com/gokumohandas)
 * Github: [GokuMohandas](https://github.com/GokuMohandas)
 * Blog: [The Neural Perspective](http://www.theneuralperspective.com)
-* Linkedin: [Goku Mohandas](https://www.linkedin.com/in/gokumd)
+* Linkedin: [Goku Mohandas](https://www.linkedin.com/in/goku)
 
 ### Author Bio:
 Goku Mohandas is an artificial intelligence (AI) researcher in Silicon Valley with a focus on using deep learning for natural language tasks. His interests include research on AI for intelligent search and question answering augmented by attentional and memory-based interfaces. He also strongly believes in the democratization of AI with a focus on interpretability and transparency. Previous work includes working on the intersection of AI and biotechnology at the Johns Hopkins University Applied Physics Laboratory.
